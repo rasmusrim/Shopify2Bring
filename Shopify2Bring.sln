@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{280DB735-7804-4703-B0E7-242BF13A4559}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopify2Bring", "Shopify2Bring\Shopify2Bring.csproj", "{59DC095C-13DD-4CAA-BB47-2E5CDD579CB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A3318BB8-5061-474C-85F6-EB10A6676CD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3318BB8-5061-474C-85F6-EB10A6676CD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3318BB8-5061-474C-85F6-EB10A6676CD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3318BB8-5061-474C-85F6-EB10A6676CD3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{280DB735-7804-4703-B0E7-242BF13A4559}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{280DB735-7804-4703-B0E7-242BF13A4559}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{280DB735-7804-4703-B0E7-242BF13A4559}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{280DB735-7804-4703-B0E7-242BF13A4559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59DC095C-13DD-4CAA-BB47-2E5CDD579CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59DC095C-13DD-4CAA-BB47-2E5CDD579CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59DC095C-13DD-4CAA-BB47-2E5CDD579CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59DC095C-13DD-4CAA-BB47-2E5CDD579CB6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

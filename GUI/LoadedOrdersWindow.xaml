@@ -1,0 +1,27 @@
+﻿<Window x:Class="GUI.LoadedOrdersWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:GUI"
+        xmlns:global="clr-namespace:;assembly=Shopify2Bring"
+        mc:Ignorable="d"
+        Title="LoadedOrders" Height="450" Width="800">
+    <DockPanel>
+        <Button DockPanel.Dock="Top" Margin="10" HorizontalAlignment="Left" Padding="10"  Name="BookButton" Click="BookButton_OnClick">Bestill</Button>
+        
+        <DataGrid x:Name="OrdersDataGrid" AutoGenerateColumns="False" d:DataContext="{d:DesignInstance global:Order}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Navn" Binding="{Binding ShippingName}" />
+                <DataGridTextColumn Header="Addresse 1" Binding="{Binding ShippingAddress1}" />
+                <DataGridTextColumn Header="Addresse 2" Binding="{Binding ShippingAddress2}" />
+                <DataGridTextColumn Header="Postnummer" Binding="{Binding ShippingZip}" />
+                <DataGridTextColumn Header="By" Binding="{Binding ShippingCity}" />
+                <DataGridTextColumn Header="Epost" Binding="{Binding Email}" />
+                <DataGridTextColumn Header="Telefon" Binding="{Binding ShippingPhone}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        
+        <TextBox Name="StatusTextBox" Visibility="Hidden"></TextBox>
+        
+    </DockPanel></Window>
