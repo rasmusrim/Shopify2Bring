@@ -41,9 +41,9 @@ public partial class LoadedOrdersWindow : Window
             var index = 1;
             _orders.ForEach(order =>
             {
-                var response = new BringSdk(_bringConfig).Book(order, isTest: true);
+                var response = new BringSdk(_bringConfig).Book(order);
 
-                var errors = response.Consignments.First().Errors;
+                var errors = response.Consignments.FirstOrDefault()?.Errors;
                 pdfLocations.Add(response.Consignments.First().Confirmation.Links.Labels);
                 
                 var responseMessage = "";
